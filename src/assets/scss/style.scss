@@ -1,0 +1,23 @@
+
+@import './base/reset';
+@import './base/page';
+@import './base/container';
+@import './base/vars';
+@import './base/btn';
+@import './blocks/sidebar';
+@import './blocks/profile';
+@import './blocks/social';
+@import './blocks/main';
+@import './blocks/header';
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $secondary;
+    font-size: 1.4rem;
+    font-family: 'system';
+    color: $white;
+    line-height: 1.5;
+}

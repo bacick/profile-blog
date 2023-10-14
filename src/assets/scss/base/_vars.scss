@@ -1,0 +1,27 @@
+//Colors
+
+$primary: #202020;
+$secondary: #181818;
+$white: #ffffff;
+$red: #ED3024;
+$blue: #3137C9;
+
+
+
+//Fonts
+/* Определяем семейство "системных" шрифтов */
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  }
+
+  //Z-index
+
+  $z-index-sidebar: 1000;
+  $z-index-header: 1000;
+
+  //value
+
+  $height-sidebar: 300px;
