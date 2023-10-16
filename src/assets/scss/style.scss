@@ -7,8 +7,13 @@
 @import './blocks/sidebar';
 @import './blocks/profile';
 @import './blocks/social';
-@import './blocks/main';
 @import './blocks/header';
+@import './blocks/nav';
+@import './blocks/subnav';
+@import './blocks/search';
+@import './blocks/main';
+@import './blocks/stories';
+@import './blocks/add-post';
 
 html{
     font-size: 62.5%;

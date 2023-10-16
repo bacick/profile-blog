@@ -17,7 +17,43 @@
 <body>
 <div class="page">
     
-    <header class="header">header</header>
+    <header class="header">
+        <div class="header__left">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link has-subnav">Статьи</a>
+    
+                        <ul class="subnav">
+                           <li class="nav__item">
+                                <a href="#" class="subnav__link">Создание сайтов</a>
+                            </li>
+                           <li class="nav__item">
+                                <a href="#" class="subnav__link">Интернет-маркетинг</a>
+                            </li>
+                           <li class="nav__item">
+                                <a href="#" class="subnav__link">Продвижение видео</a>
+                            </li>
+                        </ul>
+    
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link">Обо мне</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Реклама</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__right">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Профиль</a></li>
+                </ul>
+            </nav>
+            <form action="/" method="post" class="search">
+                <input class="search__input" type="text" placeholder="Поиск по блогу"
+            </form>
+        </div>
+    </header>
 
     <aside class="sidebar">
         <div class="sidebar__header">
@@ -61,9 +97,47 @@
     <main class="main">
         <div class="container">
 
+            <!-- Stories block -->
+            <div class="stories">
+                <div class="stories__item">
+                    <img class="stories__preview" src="./assets/images/stories/nature.png" alt="nature">
+                    <div class="stories__title">Отдыхаю на природе</div>
+                    <time class="stories__date">21.09.2020</time>
+                </div>
+                <div class="stories__item">
+                    <img class="stories__preview" src="./assets/images/stories/project.png" alt="project">
+                    <div class="stories__title">Заканчиваю
+                        сложный проект</div>
+                    <time class="stories__date">15.09.2020</time>
+                </div>
+                <div class="stories__item">
+                    <img class="stories__preview" src="./assets/images/stories/aparment.png" alt="aparment">
+                    <div class="stories__title">Переехал в новую
+                        квартиру</div>
+                    <time class="stories__date">11.09.2020</time>
+                </div>
+                <div class="stories__item">
+                    <img class="stories__preview" src="./assets/images/stories/autumn.png" alt="autumn">
+                    <div class="stories__title">Осень пришла!</div>
+                    <time class="stories__date">28.08.2020</time>
+                </div>
+            </div><!-- Stories -->
             
-            Hello!
+            <!-- Add post -->
+            <div class="add-post">
+                <form class="add-post__form" action="/" method="post">
+                    <textarea class="add-post__textarea" placeholder="Напишите что-нибудь"></textarea>
             
+                    <div class="add-post__form-actions">
+                        <label class="add-post__file" for="add-post-file">
+                            <input type="file" name="" id="add-post-file">
+                        </label>
+                        <button class="add-post__send" type="submit">
+                            <img src="./assets/images/add-post/arow.svg" alt="send">
+                        </button>
+                    </div>
+                </form>
+            </div>
 
         </div>
         
