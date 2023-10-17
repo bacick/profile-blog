@@ -4,6 +4,7 @@
 @import './base/container';
 @import './base/vars';
 @import './base/btn';
+@import './base/embed';
 @import './blocks/sidebar';
 @import './blocks/profile';
 @import './blocks/social';
@@ -14,6 +15,8 @@
 @import './blocks/main';
 @import './blocks/stories';
 @import './blocks/add-post';
+@import './blocks/post';
+@import './blocks/pagination';
 
 html{
     font-size: 62.5%;
@@ -25,4 +28,22 @@ body {
     font-family: 'system';
     color: $white;
     line-height: 1.5;
+}
+
+.visually-hidden {
+    /* Contain text within 1px box */
+   height: 1px;
+   overflow: hidden;
+   width: 1px;
+
+   /* Keep the layout */
+   position: absolute;
+
+   /* Remove any visible trace (e.g. background color) */
+   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+   clip: rect(1px, 1px, 1px, 1px);
+   clip-path: inset(50%); /* browsers in the future */
+
+   /* Prevent the screen reader to skip spaces between words */
+   white-space: nowrap;
 }

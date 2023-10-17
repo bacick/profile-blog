@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    width: calc(100% - $height-sidebar);
+    width: calc(100% - $width-sidebar);
     position: fixed;
     top: 0;
     right: 0;
