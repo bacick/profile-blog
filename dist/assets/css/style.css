@@ -474,11 +474,21 @@ legend {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 3rem;
     padding: 1.5rem 2rem;
     box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.45);
     background-color: #181818;
     border-radius: 5px;
+}
+
+.add-post__form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
 }
 
 .add-post__textarea {
@@ -494,22 +504,19 @@ legend {
 }
 
 .add-post__textarea::-webkit-input-placeholder {
-    -webkit-columns: #d2d2d2;
-    columns: #d2d2d2;
+    color: #d2d2d2;
 }
 
 .add-post__textarea:-ms-input-placeholder {
-    columns: #d2d2d2;
+    color: #d2d2d2;
 }
 
 .add-post__textarea::-ms-input-placeholder {
-    columns: #d2d2d2;
+    color: #d2d2d2;
 }
 
 .add-post__textarea::placeholder {
-    -webkit-columns: #d2d2d2;
-    -moz-columns: #d2d2d2;
-    columns: #d2d2d2;
+    color: #d2d2d2;
 }
 
 .add-post__form-actions {

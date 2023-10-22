@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>Profile</title>
+    <title>Reset</title>
 </head>
 <body>
 <div class="page">
@@ -98,45 +98,26 @@
         <div class="container">
 
             
-            <h1 class="page__title">Профиль</h1>
+            <h1 class="page__title page__title--center">Востановить</h1>
             
-            <form action="/" class="form" method="post">
-                <div class="cabinet">
-                    <div class="cabinet__form">
-                        <div class="form__group form__group--md">
-                            <input type="text" class="form__control" placeholder="Ваше имя" value="Дмитрий Чугуевский">
-                            <span class="form__line"></span>
-                        </div>
-                        <div class="form__group form__group--md">
-                            <input type="email" class="form__control" placeholder="Ваш e-mail" value="alex.provo@mail.com">
-                            <span class="form__line"></span>
-                        </div>
-                        <div class="form__group form__group--md">
-                            <input type="password" class="form__control" placeholder="Новый пароль">
-                            <span class="form__line"></span>
-                        </div>
-                        <div class="form__group form__group--md">
-                            <input type="password" class="form__control" placeholder="Подтвердите пароль"
-                            >
-                            <span class="form__line"></span>
-                        </div>
-                    </div>
-                    <div class="cabinet__avatar">
-                        <img src="https://placekitten.com/150" alt="avatar">
-                        <label for="" class="cabinet__file">
-                            <input type="file">
-                            выбрать аватар
-                        </label>
-                    </div>
+            <form action="/" class="form form--auth" method="post">
+                
+                <div class="form__group form__group--md">
+                    <input type="email" class="form__control" placeholder="Ваш e-mail">
+                    <span class="form__line"></span>
                 </div>
             
-                <div class="form__footer">
-                    <button class="btn btn--blue btn--rounded btn--sm">Сохранить</button>
+                <div class="form__footer form__footer--center">
+                    <div class="form__group form__group--md">
+                        <button class="btn btn--blue btn--rounded btn--sm">востановить</button>
+                    </div>
+                    <ul class="form__footer-list">
+                        <li><a href="signin.html">войти</a></li>
+                        <li><a href="signup.html">регистрация</a></li>
+                    </ul>
                 </div>
+                
             </form>
-            
-            
-            
 
         </div>
         
