@@ -1,6 +1,7 @@
 .add-post{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 3rem;
     padding: 1.5rem 2.0rem;
 
@@ -11,7 +12,9 @@
 }
 
 .add-post__form {
-
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .add-post__textarea{
@@ -28,7 +31,7 @@
 
 
     &::placeholder{
-        columns: #d2d2d2;
+        color: #d2d2d2;
     }
 }
 

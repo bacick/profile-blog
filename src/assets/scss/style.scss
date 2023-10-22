@@ -1,10 +1,10 @@
 
 @import './base/reset';
-@import './base/page';
 @import './base/container';
 @import './base/vars';
 @import './base/btn';
 @import './base/embed';
+@import './base/page';
 @import './blocks/sidebar';
 @import './blocks/profile';
 @import './blocks/social';
@@ -20,6 +20,9 @@
 @import './blocks/related';
 @import './blocks/comments';
 @import './blocks/form';
+@import './blocks/works';
+@import './blocks/tags';
+
 
 html{
     font-size: 62.5%;

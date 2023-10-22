@@ -86,10 +86,6 @@ legend {
   display: block;
 }
 
-.page {
-  overflow: hidden;
-}
-
 .container {
   max-width: 700px;
   margin: 0 auto;
@@ -166,6 +162,16 @@ legend {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.page {
+  overflow: hidden;
+}
+
+.page__title {
+  margin-bottom: 3rem;
+  font-size: 2.1rem;
+  color: #ffffff;
 }
 
 .sidebar {
@@ -422,11 +428,18 @@ legend {
 .add-post {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 3rem;
   padding: 1.5rem 2rem;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.45);
   background-color: #181818;
   border-radius: 5px;
+}
+
+.add-post__form {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .add-post__textarea {
@@ -441,7 +454,7 @@ legend {
   outline: none;
 }
 .add-post__textarea::placeholder {
-  columns: #d2d2d2;
+  color: #d2d2d2;
 }
 
 .add-post__form-actions {
@@ -487,9 +500,6 @@ legend {
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.35);
 }
 
-.post__header {
-  margin: 0 0 0 2.5rem;
-}
 .post__header--preview {
   margin: -2.5rem -2.5rem 0;
 }
@@ -809,6 +819,72 @@ legend {
   bottom: 0;
   z-index: 1;
   transition: width 0.2s linear;
+}
+
+.work {
+  margin-bottom: 3rem;
+  display: flex;
+  border-radius: 5px;
+  background: #202020;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.work__preview {
+  width: 31rem;
+}
+.work__preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work__content {
+  max-width: 29rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.woke__title {
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+.woke__title a {
+  color: inherit;
+}
+
+.work__description {
+  margin-bottom: 3rem;
+  color: #d2d2d2;
+  font-size: 1.6rem;
+  line-height: 1.68;
+  font-weight: 300;
+}
+
+.work__footer {
+  margin-top: auto;
+  text-align: right;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.tags__item {
+  margin: 0 1rem 1rem 0;
+  padding: 0.4rem 0.9rem;
+  background-color: #ea8c1e;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: #ffffff;
+  text-align: center;
 }
 
 html {
