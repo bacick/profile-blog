@@ -5,6 +5,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include breakpoint($tablet-bp){
+        .show-sidebar & {
+            position: relative;
+
+        
+        }
+    }
 }
 
 .page__title{
@@ -14,5 +22,21 @@
 
     &--center{
         text-align: center;
+    }
+}
+
+.page__mask{
+    @include breakpoint($tablet-bp){
+        
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba($color: #000000, $alpha: .8);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
     }
 }

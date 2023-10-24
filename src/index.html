@@ -5,7 +5,7 @@ title: Home
 
 <!-- Stories block -->
 <div class="stories">
-  <div class="stories__item">
+  <div class="stories__item" data-modal="stories-modal">
     <img
       class="stories__preview"
       src="./assets/images/stories/nature.png"
@@ -50,6 +50,7 @@ title: Home
     <textarea
       class="add-post__textarea"
       placeholder="Напишите что-нибудь"
+      data-autoresize
     ></textarea>
 
     <div class="add-post__form-actions">
@@ -134,8 +135,8 @@ title: Home
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media;
             gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 

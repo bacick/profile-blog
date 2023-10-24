@@ -22,7 +22,13 @@ $header-bg: #0D0D0D;
 
   $z-index-sidebar: 1000;
   $z-index-header: 1000;
+  $z-index-modal:1010;
 
   //value
 
   $width-sidebar: 300px;
+
+  //Break point
+
+  $tablet-bp: 991px;
+  $mobile-bp: 575px;

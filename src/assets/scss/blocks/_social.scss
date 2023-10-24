@@ -1,9 +1,23 @@
 .social {
     display: flex;
     justify-content: center;
+
+    @include breakpoint($tablet-bp){
+
+        .show-sidebar & {
+            display: none;
+        }
+     }
 }
 .social__item {
     margin: 0 .75rem;
+    
+    transition: all 0.2s ease-in;
+
+    &:hover{
+        transform: scale(1.1);
+        filter: contrast(110%) brightness(1.2) saturate(1.2);
+    }
 }
 .social__link {
 }

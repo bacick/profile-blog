@@ -1,7 +1,4 @@
 .add-post{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: 3rem;
     padding: 1.5rem 2.0rem;
 
@@ -9,18 +6,22 @@
     background-color: $secondary;
     border-radius: 5px;
 
+    @include breakpoint($mobile-bp){
+        display: none;
+    }
 }
 
 .add-post__form {
     display: flex;
-    align-items: center;
-    width: 100%;
+    align-items: flex-end;
+
 }
 
 .add-post__textarea{
     display: block;
+    flex-grow: 1;
     width: 80%;
-    height: 26px;
+    height: 34px;
     font-size: 1.5rem;
     font-family: inherit;
     
@@ -28,6 +29,7 @@
     background: transparent;
     resize: none;
     outline: none;
+    overflow: hidden;
 
 
     &::placeholder{
@@ -36,9 +38,10 @@
 }
 
 .add-post__form-actions{
-    width: 20%;
+    width: 120px;
     display: flex;
     justify-content: space-around;
+    flex-shrink: 0;
 }
 
 .add-post__file,

@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+
+    @include breakpoint($mobile-bp){
+        margin-bottom: 2rem;
+    }
 }
 .tags__item {
     margin: 0 1rem 1rem 0;
